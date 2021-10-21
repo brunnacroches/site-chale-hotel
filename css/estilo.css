@@ -1,0 +1,238 @@
+/* ESTRUTURA DO SITE */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/* DEFININDO O ESTILO DA LETRA GERAL BACKGROUND GERAL*/
+body {
+	font-family: Helvetica, "Trebuchet MS", sans-serif;
+	background: #fff url(../imagens/bg.png);
+	margin: 15px ;
+}
+
+/* FORMATAR O CONTAINER*/
+#container {
+	background: #ede9cc url(../imagens/bg-container.png)top center repeat;
+	margin: 0 auto; 	/*CONAINER CENTRALIZADO*/
+	min-width: 740px;	/*TAMANHO MINIMO*/
+	max-width: 1180px;	/*LAGURA MAXIMA*/
+
+}
+
+/* FORMATAR O TOPO*/
+#topo {
+	position: relative;
+	background: #dbcd87;
+	height:15.4em;			/*CASO AUMENTE O TAM DO TEXTO POIS QUERO QUE ESSA ALTURA SEJA PROPORCIONAL A ALTURA DOS TEXTOS*/
+	min-height: 250px;		/*TOPO ALTURA MINIMA*/
+}
+
+/* AREA LOGO*/
+#area-logo {
+	position: absolute;
+	background: url(../imagens/topo-imagem-principal.png) no-repeat;
+	width: 100%;
+	height: 250px;
+	top: 0;				/*LOGO COLADA A ESQUERDA*/
+	left: 0;
+	z-index: 1; 		/*ESSA IMAGEM E QUE ESTA SOBRE A AREA DE MENU*/
+}
+
+/* CONFIGURAR A LOGO CHALE HOTEL */
+.logo a {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 3;			/* PARA O LOGO FICAR ACIMA TANTO DA NOSSA AREA DE LOGO QUANTO DA NOSSA AREA DE MENU*/
+	background: url(../imagens/logo.png) no-repeat;
+	width: 151px;
+	height: 66px;
+	text-indent: -9000px; 	/* PARA TIRAR O TEXTO DA TE */
+}
+
+
+/* AREA MENU */
+#area-menu { 				/* IMG SOBREPOE A AREA-LOGO */
+	position: absolute;
+	top: 0;					/*LOGO COLADA A ESQUERDA*/
+	right: 0;
+	background: url(../imagens/topo-imagem-lateral.png) no-repeat ;
+	width: 450px;
+	height: 250px;
+	z-index: 2; 
+}
+
+/* CONTEUDO MENU */
+#conteudo-menu {
+	margin-left: 90px; 	/* EMPURRAR O CONTEUDO PARA A DIREITA */
+	margin-right: 15px;
+	padding-top: 15px;
+}
+
+/* MENU LOCAIS */
+#menu-locais {
+	border-bottom: 1px solid #b5ab56;
+	border-top: 1px solid #b5ab56;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 0.7em;
+	color: #8b8448;
+}
+
+#menu-locais .locais {
+	float: left;
+	line-height: 2.1em;
+}
+
+/* TIRAR O UNDERLINE DE TODOS OS LINKS */
+a {
+	text-decoration: none;
+}
+
+/* FORMATANDO A RESERVA */
+a.reserva {
+	text-transform: uppercase;
+	background: #a29750;
+	color: #fff5b0;
+	padding: 5px 10px;
+	float: right;
+}
+
+/* BARRA DE NAVEGACAO VERTICAL */
+#menu {
+	margin-top: 15px;
+}
+
+/* FORMATACOES PADROES PARA A NOSSA UL*/
+ul {
+	list-style: none;
+}
+
+/* UL ACESSANDO O ID DE NAVEGACAO */
+ul#navegacao {
+	float: left;
+}
+ul#navegacao a {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	padding: 5px;
+	color: #6e672c;
+	line-height: 30px;
+} 
+
+ul#navegacao a:hover {
+	background: #fdf6be;
+}
+
+/* IMAGEM DEPOIMENTO */
+.depoimento {
+	width: 226px;
+	height: 164px;
+	float: right;
+}
+
+/* AREA PRINCIPAL */
+#area-principal {
+	float: left;
+	width:50% ; /* PARA TER UM LAYOU LIQUIDO DEVE-SE COLOCAR AS PORCENTAGENS */
+	background: url(../imagens/bg-area-principal.png) top left repeat-x;  /* REPITA NA HORIZONTAL */
+	padding: 15px 0px;
+}
+
+/* AREA LATERAL */
+#area-lateral {
+	float: right;
+	width: 50%;
+	background: url(../imagens/bg-area-lateral.png) top left repeat-x;  /* REPITA NA HORIZONTAL */
+	padding: 20px 0px;
+
+}
+
+/* CONFIGURACAO DOS CONTEUDOS */
+.conteudo {
+	margin: 0 auto;		/* P/ QUE ELE FIQUE CENTRALIZADO  */
+	width: 90%;
+}
+
+/* RODAPE */
+#rodape {
+	clear: both;
+	padding: 16px;
+	background: #fff url(../imagens/bg-rodape.png) repeat-x top;
+	color: #7d7640;
+}
+
+/* FORMATACOES DE TEXTOS */
+h2 {
+	color: #7d7640;
+	font-size: 1.1em;
+	padding: 5px 0px;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 10px; /* ESPACAMENTO ENTRE OS PARAGRAFOS */
+
+}
+
+/* FORMATACOES DA AREA LATERAL */
+#beneficios li {
+	padding: 8px;
+	border-bottom: 1px solid #f3efcb;
+	height: 6em;
+}
+
+/* FORMATACOES DA AREA LATERAL >>> IMAGEM <<< */
+#beneficios li a img {
+	float: left;
+	margin-right: 8px;
+}
+ 
+/* FORMATACOES DA AREA LATERAL >>> LINK <<< */
+#beneficios li a p {
+	color: #000;
+	font-size: 0.8em;
+}
+
+/* FORMATACOES DA AREA LATERAL >>> APENAS O H3 <<< */
+#beneficios li a h3 {
+	font-size: 1em;
+	color: #615b2d;
+	padding: 5px 0;
+	background: url(../imagens/ornamento.png) no-repeat center right;
+}
+
+/* PASSAR O MOUSE <<< */
+#beneficios li:hover {
+	background: #f6f3d6;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
